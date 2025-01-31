@@ -1,12 +1,26 @@
+<h1 align="left"> CRUD_Project</h1>
+
+
 Простой проект для демонстрации базовых операций CRUD (Create, Read, Update, Delete) с использованием Spring Boot и REST API.
 
-Проект разработан с использованием следующих технологий:
+**Проект разработан с использованием следующих технологий:**
+
 Backend: Spring Boot (Java).
+
 База данных: PostgreSQL (или другая, в зависимости от конфигурации).
+
 API: RESTful.
+
 Maven: Для управления зависимостями и сборки проекта.
 
-**API Endpoints**
+  
+<h1>Структура проекта</h1>
+
+![image](https://github.com/user-attachments/assets/1deaecb3-d4b4-432b-9e80-ef6fe1d10093)
+
+
+
+<h1>API Endpoints</h1>
 1. Получить приветственное сообщение
 Метод: GET
 URL: /api
@@ -27,16 +41,7 @@ URL: /api/products
 Метод: PUT
 URL: /api/products/{id}
 
-**Структура проекта**
-CRUD_Project/
-├── src/
-│   ├── main/
-│   │   ├── java/com/example/ecom_project/
-│   │   │   ├── controller/          # Контроллеры (ProductController)
-│   │   │   ├── model/               # Модели данных (Product)
-│   │   │   ├── service/             # Сервисы (ProductService)
-│   │   │   └── EcomProjectApplication.java # Главный класс приложения
-│   │   └── resources/               # Ресурсы (application.properties, настройки PostgreSQL)
-│   └── test/                        # Тесты
-├── pom.xml                          # Файл конфигурации Maven
-└── README.md                        # Документация
+6. Удалить продукт по ID
+Метод: DELETE
+URL: /api/products/{id}
+
